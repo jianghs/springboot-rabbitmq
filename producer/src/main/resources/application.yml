@@ -1,0 +1,18 @@
+server:
+  port: 8887
+
+spring:
+  application:
+    name: rabbitmq-producer
+  rabbitmq:
+    host: 139.196.190.46
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+    connection-timeout: 15000
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:
+      mandatory: true
+
